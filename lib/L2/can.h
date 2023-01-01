@@ -27,6 +27,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "L2Wrapper.h"
+#include "stm32f1xx_hal_can.h"
 
 /* USER CODE BEGIN Includes */
 

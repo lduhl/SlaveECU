@@ -5,15 +5,15 @@
 #pragma once
 
 #include "can.h"
-#include "usart.h"
+//#include "usart.h"
 #include "gpio.h"
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx_hal_can.h"
 
 
-class L2Wrapper
+struct L2Wrapper
 {
-    public:
+    /*public:
         L2Wrapper()
         {
 
@@ -25,5 +25,5 @@ class L2Wrapper
 	uint8_t TxData[8] = {0,};
 	uint8_t RxData[8] = {0,};
 	uint32_t TxMailbox = 0;
-	uint8_t trans_str[30];
+	uint8_t trans_str[30];*/
 };

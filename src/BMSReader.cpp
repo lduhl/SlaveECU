@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <L2Wrapper.h>
+#include <L2Wrapper.hpp>
 #include <BMSReader.h>
 
 L2Wrapper L2;

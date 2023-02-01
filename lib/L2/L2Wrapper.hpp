@@ -139,7 +139,7 @@ class L2Wrapper
     RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL8;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
-        Error_Handler();
+        //error handler
     }
 
     /** Initializes the CPU, AHB and APB buses clocks
@@ -153,7 +153,7 @@ class L2Wrapper
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
     {
-        Error_Handler();
+        //error handler
     }
     }
 
@@ -180,20 +180,6 @@ class L2Wrapper
     /* USER CODE BEGIN Callback 1 */
 
     /* USER CODE END Callback 1 */
-    }
-
-    /**
-     * @brief  This function is executed in case of error occurrence.
-     * @retval None
-     */
-    void Error_Handler(void)
-    {
-    /* USER CODE BEGIN Error_Handler_Debug */
-    /* User can add his own implementation to report the HAL error return state */
-    while(1)
-    {
-    }
-    /* USER CODE END Error_Handler_Debug */
     }
 
     #ifdef  USE_FULL_ASSERT
